@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ficha Personal UADE</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1 id="titulo-principal">Ficha personal</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a><a href="contacto.html">Contacto</a></li>
+                    <li></li>
+                    <li><button id="btn-modo">🌙</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="formulario-contacto">
+            <div class="nombre">
+                    <h2>Marcos Montedonico</h2>
+                </div>            
+            <p>Completá el formulario y me pondré en contacto a la brevedad.</p>
+            
+            <form id="form-contacto">
+                <div class="form-grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <span class="error-campo" id="error-nombre"></span>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="edad">Edad:</label>
+                    <input type="text" id="edad" name="edad">
+                    <span class="error-campo" id="error-edad"></span>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error-campo" id="error-email"></span>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                    <span class="error-campo" id="error-mensaje"></span>
+                </div>
+
+                <div class="botones-form">
+                    <button type="button" id="btn-limpiar" class="btn-limpiar">Limpiar</button>
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR633womV6y7rU2wZk-kBX-mAqqqLS6WlxJ9g&s" alt="Logo UADE" class="logo-uade">
+            <p>&copy; 2025 UADE - Todos los derechos reservados</p>
+            <a href="https://github.com/404mqs/parcial-dweb-mmontedonico" target="_blank" class="btn-repo">Ver Repositorio</a>
+        </div>
+    </footer>
+</body>
+</html>
